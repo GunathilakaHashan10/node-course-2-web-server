@@ -12,9 +12,9 @@ hbs.registerHelper('getCurrentYear', () => {
     return new Date().getFullYear()
 });
 
-app.use((req, res, next) => {
-    res.render('maintance.hbs');
-});
+// app.use((req, res, next) => {
+//     res.render('maintance.hbs');
+// });
 
 app.use(express.static(__dirname + '/public'));
 
